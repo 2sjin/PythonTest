@@ -1,7 +1,7 @@
 import csv
 import matplotlib.pyplot as plt
 
-f = open('source/weather.csv')	# csv 파일을 열어서 f에 저장
+f = open('data/weather.csv')	# csv 파일을 열어서 f에 저장
 data = csv.reader(f)		# csv 파일 읽기	
 header = next(data)		# 헤더 제거
 

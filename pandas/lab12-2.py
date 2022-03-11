@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import datetime as dt
 
 # 판다스로 csv 파일 읽기(인코딩 타입 지정)
-weather = pd.read_csv('source/weather.csv', encoding='cp949')
+weather = pd.read_csv('data/weather.csv', encoding='cp949')
 
 monthly = [ None for x in range(12) ]
 monthly_wind = [ 0 for x in range(12) ]
