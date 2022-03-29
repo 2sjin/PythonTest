@@ -4,10 +4,12 @@ import numpy as np
 infoArr = np.array(["20194146", "이승진"])
 print(infoArr[0], infoArr[1], "\n")
 
-players = np.zeros( (100, 3) )
+players = np.zeros( (100, 3) )    # 100행 3열의 0으로 채워진 배열 생성
+
+# 표준편차 * np.random.randn(개수) + 평균
 players[:, 0] = 10 * np.random.randn(100) + 175
 players[:, 1] = 10 * np.random.randn(100) + 70
-players[:, 2] = np.floor(10 * np.random.randn(100)) + 22
+players[:, 2] = np.floor(10 * np.random.randn(100)) + 22  # 소수점 이하 제거
 
 heights = players[:, 0]
 print('신장 평균값:', np.mean(heights))
